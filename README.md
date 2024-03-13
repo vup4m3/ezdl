@@ -18,6 +18,7 @@ ezdl is a simple Rust program designed to facilitate bulk downloading of files u
 ```php
 <Path>
 <File Name>
+<Filename extension>
 <URL 1>
 <URL 2>
 ...
@@ -36,18 +37,21 @@ The input file (input.txt) should follow this format:
 ```php
 <Path>
 <File Name>
+<Filename extension>
 <URL 1>
 <URL 2>
 ...
 ```
 - `<Path>`: The path in which the files will be organized.
 - `<File Name>`:The name of the file or directory to be created for storing the downloaded files.
+- `<Filename extension>`: The filename extension.
 - `<URL>`:URLs pointing to the files to be downloaded.
 
 Example:
 ```
 2024
 Conference_Talks
+mp4
 https://example.com/talk1.mp4
 https://example.com/talk2.mp4
 ```
